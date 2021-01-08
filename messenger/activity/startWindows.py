@@ -1,1 +1,1 @@
-# start windows when app starts
+#Start windows / open windows
