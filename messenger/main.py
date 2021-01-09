@@ -10,7 +10,7 @@ import yaml
 
 class __main__:
     def __init__(self):
-        print("ENTER LANGUAGE: (DE)  (EN)") #Can't use the translation system here yet
+        print("ENTER LANGUAGE: (DE)  (EN)")
         language = input().lower()
         self.handleStartup(language)
 
@@ -19,7 +19,7 @@ class __main__:
         resp = str(input().lower())
         if resp == "--terminal":
             print(self.translate("main.climode", language))
-            open = input()
+            open = input(">> ")
             # run the StartCli CLASS
         else:
             print(self.translate("main.guimode", language))
@@ -36,7 +36,7 @@ class __main__:
         if language == "de":
             string = languageFileParsed["DE_GE"][string]
             return string
-        #This is OP
+
 
 if __name__ == "__main__":
     __main__()
