@@ -2,9 +2,8 @@
 # Please use multiclasses 
 # ~ZaZa
 #Main by zekiahepic
-import io
 import os
-import pathlib
+import sys
 import yaml
 
 
@@ -36,6 +35,8 @@ class __main__:
         if language == "de":
             string = languageFileParsed["DE_GE"][string]
             return string
+        else:
+            sys.exit("Invalid language, please try again.")
 
 
 if __name__ == "__main__":
