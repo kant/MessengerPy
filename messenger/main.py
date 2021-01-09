@@ -18,7 +18,7 @@ class __main__:
         print(self.translate("main.welcome", language))
         resp = str(input().lower())
         if resp == "--terminal":
-            print(self.translate("main.climode"), language)
+            print(self.translate("main.climode", language))
             open = input()
             # run the StartCli CLASS
         else:
