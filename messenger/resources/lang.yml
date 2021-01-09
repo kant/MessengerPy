@@ -6,6 +6,6 @@ EN_US:
 
 #German translations are probably wrong (i am not very good at german)
 DE_GE:
-  main.welcome: "Welkom zu das MessengerPy Software, Möchtest wenn du GUI-mode eingeben, drücke du [Enter-Taste], wenn Sie im Terminalmodus weiterarbeiten möchten, eben sie --terminal."
-  main.climode: "Arbeiten im Cli Modus."
-  main.guimode: "TRANSLATION NOT ADDED (i am too lazy)"
+  main.welcome: "Willkommen bei MessengerPy möchten sie die GUI starten drücken sie enter möchten sie im terminal bleiben gebe --terminal ein."
+  main.climode: "CLI Modus an."
+  main.guimode: "Starte GUI!"
