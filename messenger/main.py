@@ -11,12 +11,12 @@ import yaml
 class __main__:
     def __init__(self):
         print("ENTER LANGUAGE: (DE)  (EN)")
-        language = input().lower()
+        language = input(">> ").lower()
         self.handleStartup(language)
 
     def handleStartup(self, language):
         print(self.translate("main.welcome", language))
-        resp = str(input().lower())
+        resp = str(input(">> ").lower())
         if resp == "--terminal":
             print(self.translate("main.climode", language))
             open = input(">> ")
