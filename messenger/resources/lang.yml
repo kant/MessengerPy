@@ -1,0 +1,11 @@
+#Translations for the CLI client are in this file.
+EN_US:
+  main.welcome: "Welcome to the MessagePY Client, if you want to enter GUI mode press [ENTER], if you want to keep running in terminal mode, type --terminal."
+  main.climode: "Running in Cli Mode."
+  main.guimode: "Starting GUI!"
+
+#German translations are probably wrong (i am not very good at german)
+DE_GE:
+  main.welcome: "Welkom zu das MessengerPy Software, Möchtest wenn du GUI-mode eingeben, drücke du [Enter-Taste], wenn Sie im Terminalmodus weiterarbeiten möchten, eben sie --terminal."
+  main.climode: "Arbeiten im Cli Modus."
+  main.guimode: "TRANSLATION NOT ADDED (i am too lazy)"

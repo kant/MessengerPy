@@ -1,21 +1,42 @@
 # main file
 # Please use multiclasses 
 # ~ZaZa
+#Main by zekiahepic
+import io
+import os
+import pathlib
+import yaml
+
 
 class __main__:
     def __init__(self):
-        print("Welcome to the MessagePY Client, if you want to enter GUI mode press [ENTER], if you want to keep running in terminal mode, type --terminal.")
+        print("ENTER LANGUAGE: (DE)  (EN)") #Can't use the translation system here yet
+        language = input().lower()
+        self.handleStartup(language)
+
+    def handleStartup(self, language):
+        print(self.translate("main.welcome", language))
         resp = str(input().lower())
         if resp == "--terminal":
-            print("Running in Cli Mode")
-            #run the StartCli CLASS
+            print(self.translate("main.climode", language))
             open = input()
+            # run the StartCli CLASS
         else:
-            print("Starting GUI!")
-            #run the startWindows CLASS
+            print(self.translate("main.guimode", language))
+            # run the startWindows CLASS
 
+    @staticmethod
+    def translate(string, language):
+        languageFile = os.path.join(os.getcwd(), "resources\lang.yml")
+        languageFileParsed = yaml.load(open(languageFile), Loader=yaml.FullLoader)
 
+        if language == "en":
+            string = languageFileParsed["EN_US"][string]
+            return string
+        if language == "de":
+            string = languageFileParsed["DE_GE"][string]
+            return string
+        #This is OP
 
 if __name__ == "__main__":
     __main__()
-
